@@ -1,0 +1,34 @@
+<table>
+    <thead>
+    <tr>
+        <th>StudentID</th>
+        <th>FirstName</th>
+        <th>MiddleName</th>
+        <th>LastName</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>ZIP</th>
+        <th>PhoneNumber</th>
+        <th>Advisor</th>
+        <th>Major</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for row in value %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+                <td>{{row[6]}}</td>
+                <td>{{row[7]}}</td>
+                <td>{{row[8]}}</td>
+                <td>{{row[9]}}</td>
+                <td>{{row[10]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
